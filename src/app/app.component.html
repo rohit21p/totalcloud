@@ -8,7 +8,7 @@
       </div>
       <span *ngIf="available.length === 0">No one available</span>
     </div>
-    <div class="action d-flex flex-column justify-content-center align-items-center">
+    <div class="d-flex flex-column justify-content-center align-items-center action">
       <button [disabled]="assigns" class="btn btn-primary" (click)="assign()" style="margin:20px;">Assign>>></button>
       <button [disabled]="revokes"class="btn btn-primary" (click)="revoke()" style="margin:20px;"><<Revoke</button>
     </div>

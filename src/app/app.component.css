@@ -44,5 +44,6 @@
     .action {
         width: 100%;
         justify-content: center;
+        flex-direction: row !important;
     }
 }
