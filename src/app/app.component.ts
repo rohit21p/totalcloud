@@ -10,6 +10,8 @@ declare let $: any;
 export class AppComponent {
   aselected = 0;
   asselected = 0;
+  assigns = true;
+  revokes = true;
 
   available = [{
     name: 'John Doe',
@@ -18,44 +20,41 @@ export class AppComponent {
     name: 'John Doe 2',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 3',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 4',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 5',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 6',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 7',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 8',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 9',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 10',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 11',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 12',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
-    name: 'John Doe 2',
+    name: 'John Doe 13',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }];
 
-  assigned = [{
-    name: 'John Doe 3',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
-  }];
+  assigned = [];
 
   assign() {
     if (!this.available.length) {
@@ -65,6 +64,7 @@ export class AppComponent {
     this.assigned.push(this.available[this.aselected]);
     this.available.splice(this.aselected, 1)
     this.aselected = 0;
+    this.assigns = true;
   }
 
   revoke() {
@@ -75,17 +75,20 @@ export class AppComponent {
     this.available.push(this.assigned[this.asselected]);
     this.assigned.splice(this.asselected, 1)
     this.asselected = 0;
+    this.revokes = true;
   }
 
   aselect(i) {
     $('.auser-'+this.aselected).css('background-color', 'white');
     this.aselected = i;
     $('.auser-'+i).css('background-color', '#eae9e5');
+    this.assigns = false;
   }
 
   asselect(i) {
     $('.asuser-'+this.asselected).css('background-color', 'white');
     this.asselected = i;
     $('.asuser-'+i).css('background-color', '#eae9e5');
+    this.revokes = false;
   }
 }
