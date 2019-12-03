@@ -10,8 +10,8 @@ declare let $: any;
 export class AppComponent {
   aselected = 0;
   asselected = 0;
-  assigns = true;
-  revokes = true;
+  assigns = false;
+  revokes = false;
 
   available = [{
     name: 'John Doe',
@@ -96,17 +96,25 @@ export class AppComponent {
   assigned = [];
 
   assign() {
+    if(!this.assigns) {
+      alert('Select a agent to assign.');
+      return;
+    }
     if (!this.available.length) {
-      alert('No one available to assign');
+      alert('No one available to assign.');
       return;
     }
     this.assigned.push(this.available[this.aselected]);
     this.available.splice(this.aselected, 1)
     this.aselected = 0;
-    this.assigns = true;
+    this.assigns = false;
   }
 
   revoke() {
+    if(!this.revokes) {
+      alert('Select a agent to revoke');
+      return;
+    }
     if (!this.assigned.length) {
       alert('No one available to revoke');
       return;
@@ -114,20 +122,20 @@ export class AppComponent {
     this.available.push(this.assigned[this.asselected]);
     this.assigned.splice(this.asselected, 1)
     this.asselected = 0;
-    this.revokes = true;
+    this.revokes = false;
   }
 
   aselect(i) {
     $('.auser-'+this.aselected).css('background-color', 'white');
     this.aselected = i;
     $('.auser-'+i).css('background-color', '#eae9e5');
-    this.assigns = false;
+    this.assigns = true;
   }
 
   asselect(i) {
     $('.asuser-'+this.asselected).css('background-color', 'white');
     this.asselected = i;
     $('.asuser-'+i).css('background-color', '#eae9e5');
-    this.revokes = false;
+    this.revokes = true;
   }
 }
