@@ -15,82 +15,82 @@ export class AppComponent {
 
   available = [{
     name: 'John Doe',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 2',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 3',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 4',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 5',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 6',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 7',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 8',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 9',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 10',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 11',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 12',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 13',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 14',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 15',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 16',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 17',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 18',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 19',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 20',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 21',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 22',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 23',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 24',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 25',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 26',
-    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+    img: 'assets/Mauro-profile-picture.jpg'
   }];
 
   assigned = [];
