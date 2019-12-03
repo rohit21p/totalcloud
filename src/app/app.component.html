@@ -6,6 +6,7 @@
         <img src="{{user.img}}" alt="Photo" style="height: 20px;">
         <span class="name">{{user.name}}</span>
       </div>
+      <span *ngIf="available.length === 0">No one available</span>
     </div>
     <div class="action d-flex flex-column">
       <button class="btn btn-primary" (click)="assign()">Assign>>></button>
@@ -16,6 +17,7 @@
         <img src="{{user.img}}" alt="Photo" style="height: 20px;">
         <span class="name">{{user.name}}</span>
       </div>
+      <span *ngIf="assigned.length === 0">No one available</span>
     </div>
   </div>
 </div>
