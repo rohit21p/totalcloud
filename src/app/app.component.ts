@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 
+declare let $: any;
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,15 +13,48 @@ export class AppComponent {
 
   available = [{
     name: 'John Doe',
-    img: 'http://cacvs.org/wp-content/uploads/unknown-picture.jpg'
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }, {
     name: 'John Doe 2',
-    img: 'http://cacvs.org/wp-content/uploads/unknown-picture.jpg'
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 2',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }];
 
   assigned = [{
     name: 'John Doe 3',
-    img: 'http://cacvs.org/wp-content/uploads/unknown-picture.jpg'
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }];
 
   assign() {
@@ -38,7 +73,19 @@ export class AppComponent {
       return;
     }
     this.available.push(this.assigned[this.asselected]);
-    this.assigned.splice(this.aselected, 1)
+    this.assigned.splice(this.asselected, 1)
     this.asselected = 0;
+  }
+
+  aselect(i) {
+    $('.auser-'+this.aselected).css('background-color', 'white');
+    this.aselected = i;
+    $('.auser-'+i).css('background-color', '#eae9e5');
+  }
+
+  asselect(i) {
+    $('.asuser-'+this.asselected).css('background-color', 'white');
+    this.asselected = i;
+    $('.asuser-'+i).css('background-color', '#eae9e5');
   }
 }

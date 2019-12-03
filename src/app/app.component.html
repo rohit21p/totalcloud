@@ -1,23 +1,24 @@
 <div class="container-fluid align-items-center justify-content-center d-flex flex-column">
-  <h4>Resource allocation application</h4>
-  <div class="main d-flex">
-    <div class="available d-flex flex-column border">
-      <div *ngFor="let user of available; let i = index" (click)="aselected=i"class="a-user d-flex">
-        <img src="{{user.img}}" alt="Photo" style="height: 20px;">
+  <h4 style="margin: 2%;">Resource allocation application</h4>
+  <div class="main d-flex h-75 justify-content-center border shadow flex-responsive" style="padding:3%; width: 90%">
+    <div class="available d-flex flex-column border h-100 overflow-auto" style="padding-top: 3%;">
+      <div *ngFor="let user of available; let i = index" (click)="aselect(i)"class="a-user d-flex auser-{{i}}  align-items-center" style="margin-bottom: 4%; padding: 1% 6%;">
+        <img src="{{user.img}}" alt="Photo" style="height: 35px; border-radius: 50%; margin-right: 2%;">
         <span class="name">{{user.name}}</span>
       </div>
       <span *ngIf="available.length === 0">No one available</span>
     </div>
-    <div class="action d-flex flex-column">
-      <button class="btn btn-primary" (click)="assign()">Assign>>></button>
-      <button class="btn btn-primary" (click)="revoke()"><<Revoke</button>
+    <div class="action d-flex flex-column justify-content-center align-items-center">
+      <button class="btn btn-primary" (click)="assign()" style="margin:20px;">Assign>>></button>
+      <button class="btn btn-primary" (click)="revoke()" style="margin:20px;"><<Revoke</button>
     </div>
-    <div class="assigned d-flex flex-column border">
-      <div *ngFor="let user of assigned; let i = index" (click)="aaselected=i"class="a-user d-flex">
-        <img src="{{user.img}}" alt="Photo" style="height: 20px;">
+    <div class="assigned d-flex flex-column border h-100 overflow-auto" style="padding-top: 3%;">
+      <div *ngFor="let user of assigned; let i = index" (click)="asselect(i)"class="a-user d-flex asuser-{{i}} align-items-center" style="margin-bottom: 4%; padding: 1% 6%;">
+        <img src="{{user.img}}" alt="Photo" style="height: 35px; border-radius: 50%; margin-right: 2%;">
         <span class="name">{{user.name}}</span>
       </div>
       <span *ngIf="assigned.length === 0">No one available</span>
     </div>
   </div>
+  <small>If no agent is selected, first agent is used for assign/revoke.</small>
 </div>
