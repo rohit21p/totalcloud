@@ -6,7 +6,7 @@
         <img src="{{user.img}}" alt="Photo" style="height: 35px; border-radius: 50%; margin-right: 2%;">
         <span class="name">{{user.name}}</span>
       </div>
-      <span *ngIf="available.length === 0">No one available</span>
+      <span *ngIf="available.length === 0" class="align-self-center">No one available</span>
     </div>
     <div class="d-flex flex-column justify-content-center align-items-center action">
       <button [disabled]="assigns" class="btn btn-primary" (click)="assign()" style="margin:20px;">Assign>></button>
@@ -17,7 +17,7 @@
         <img src="{{user.img}}" alt="Photo" style="height: 35px; border-radius: 50%; margin-right: 2%;">
         <span class="name">{{user.name}}</span>
       </div>
-      <span *ngIf="assigned.length === 0">No one available</span>
+      <span *ngIf="assigned.length === 0" class="align-self-center">No one available</span>
     </div>
   </div>
   <small>If no agent is selected, first agent is used for assign/revoke.</small>
