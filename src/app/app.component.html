@@ -10,7 +10,7 @@
     </div>
     <div class="action d-flex flex-column">
       <button class="btn btn-primary" (click)="assign()">Assign>>></button>
-      <button class="btn btn-primary"><<Revoke</button>
+      <button class="btn btn-primary" (click)="revoke()"><<Revoke</button>
     </div>
     <div class="assigned d-flex flex-column border">
       <div *ngFor="let user of assigned; let i = index" (click)="aaselected=i"class="a-user d-flex">

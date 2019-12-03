@@ -27,4 +27,10 @@ export class AppComponent {
     this.available.splice(this.aselected, 1)
     this.aselected = 0;
   }
+
+  revoke() {
+    this.available.push(this.assigned[this.asselected]);
+    this.assigned.splice(this.aselected, 1)
+    this.asselected = 0;
+  }
 }
