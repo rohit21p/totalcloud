@@ -52,6 +52,45 @@ export class AppComponent {
   }, {
     name: 'John Doe 13',
     img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 14',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 15',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 16',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 17',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 18',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 19',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 20',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 21',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 22',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 23',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 24',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 25',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
+  }, {
+    name: 'John Doe 26',
+    img: 'https://gpluseurope.com/wp-content/uploads/Mauro-profile-picture.jpg'
   }];
 
   assigned = [];
