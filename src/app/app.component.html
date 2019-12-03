@@ -3,7 +3,7 @@
   <div class="main d-flex">
     <div class="available d-flex flex-column border">
       <div *ngFor="let user of available; let i = index" (click)="aselected=i"class="a-user d-flex">
-        <img src="{{user.img}}" alt="Photo">
+        <img src="{{user.img}}" alt="Photo" style="height: 20px;">
         <span class="name">{{user.name}}</span>
       </div>
     </div>
@@ -13,7 +13,7 @@
     </div>
     <div class="assigned d-flex flex-column border">
       <div *ngFor="let user of assigned; let i = index" (click)="aaselected=i"class="a-user d-flex">
-        <img src="{{user.img}}" alt="Photo">
+        <img src="{{user.img}}" alt="Photo" style="height: 20px;">
         <span class="name">{{user.name}}</span>
       </div>
     </div>
