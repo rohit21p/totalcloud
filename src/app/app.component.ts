@@ -21,4 +21,10 @@ export class AppComponent {
     name: 'John Doe 3',
     img: 'http://cacvs.org/wp-content/uploads/unknown-picture.jpg'
   }];
+
+  assign() {
+    this.assigned.push(this.available[this.aselected]);
+    this.available.splice(this.aselected, 1)
+    this.aselected = 0;
+  }
 }
