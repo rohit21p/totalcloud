@@ -23,12 +23,20 @@ export class AppComponent {
   }];
 
   assign() {
+    if (!this.available.length) {
+      alert('No one available to assign');
+      return;
+    }
     this.assigned.push(this.available[this.aselected]);
     this.available.splice(this.aselected, 1)
     this.aselected = 0;
   }
 
   revoke() {
+    if (!this.assigned.length) {
+      alert('No one available to revoke');
+      return;
+    }
     this.available.push(this.assigned[this.asselected]);
     this.assigned.splice(this.aselected, 1)
     this.asselected = 0;
