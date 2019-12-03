@@ -14,6 +14,23 @@
     width: 30%;
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+  }
+
+::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4183F0; 
+    height: 50px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4183F0; 
+}
+
 @media(max-width:720px) {
     .flex-responsive {
         flex-direction: column;
