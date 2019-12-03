@@ -1,15 +1,21 @@
 <div class="container-fluid align-items-center justify-content-center d-flex flex-column">
   <h4>Resource allocation application</h4>
   <div class="main d-flex">
-    <div class="available d-flex flex-column">
-      John Doe
+    <div class="available d-flex flex-column border">
+      <div *ngFor="let user of available; let i = index" (click)="aselected=i"class="a-user d-flex">
+        <img src="{{user.img}}" alt="Photo">
+        <span class="name">{{user.name}}</span>
+      </div>
     </div>
     <div class="action d-flex flex-column">
       <button class="btn btn-primary">Assign>>></button>
       <button class="btn btn-primary"><<Revoke</button>
     </div>
-    <div class="assigned d-flex flex-column">
-      John Doe
+    <div class="assigned d-flex flex-column border">
+      <div *ngFor="let user of assigned; let i = index" (click)="aaselected=i"class="a-user d-flex">
+        <img src="{{user.img}}" alt="Photo">
+        <span class="name">{{user.name}}</span>
+      </div>
     </div>
   </div>
 </div>
